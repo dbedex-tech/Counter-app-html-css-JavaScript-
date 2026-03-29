@@ -1,0 +1,102 @@
+:root{
+  --bg_color: rgba(0, 0, 0, 1);
+  --text-color: rgba(255, 237, 237, 1);
+}
+body{
+  font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+  font-size: 2rem;
+  height:100vh;
+  width:100vw;
+  background-color:var(--bg_color);
+  color:var(--text-color);
+  line-height: 1.8;
+  margin:0;
+  padding:20px;
+  box-shadow: 0 0 16px 8px green;
+}
+.theme{
+  padding: 10px 20px;
+  margin: 10px;
+  border: 1px solid green;
+  border-radius: 50px;
+  position : absolute;
+  top:0;
+  right:0;
+  z-index: 1000;
+  background-color :var(--bg_color);
+  color:var(--text-color);
+  cursor: pointer;
+}
+
+.theme:hover{
+  transform: translateY(-3px);
+}
+
+.main{
+ height: 90%;
+ width :90%;
+  background-color: rgba(255, 255, 255, 0.2);
+  color:var(--text-color);
+  backdrop-filter: blur(10px);
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 20, 20, 1);
+  border-radius :20px;
+box-shadow: 0 0 16px 8px rgba(250, 36, 36, 0.5);
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+transition: all 5s ease;
+}
+.start{
+  font-size: 10rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 70px;
+}
+.contents{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  gap:20px;
+}
+button{
+  font-family: 'Tahoma';
+  padding:20px;
+  margin:0;
+  border: 1px solid white;
+  border-radius :10px;
+  cursor:pointer;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  
+}
+button:hover{
+  transform: translateY(-3px);
+}
+.decrease_btn{
+ box-shadow: 0 0 15px 0 rgba(255, 0, 0, 1);
+ color: black;
+}
+.reset_btn{
+  box-shadow: 0 0 15px 0 rgba(255, 237, 0, 1);
+  color: black;
+}
+.increase_btn{
+  box-shadow: 0 0 15px 0 rgba(0, 255, 3, 1);
+  color: black;
+}
+footer{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: auto;
+  color:var(--text-color);
+}
+.checkbox:checked ~ section
+#darkmode:checked ~ body{
+  --bg_color: rgba(255, 237, 237, 1);
+  --text-color: rgba(0, 0, 0, 1);
+}
